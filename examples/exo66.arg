@@ -1,0 +1,6 @@
+{
+        forall X add(zero, X, X)
+        forall X forall Y forall Z add(X, Y, Z) => add(s(X), Y, s(Z))
+        forall X prod(zero, X, zero)
+        forall X forall Y forall Z forall Z1 prod(X, Y, Z1) . add(Y, Z1, Z) => prod(s(X), Y, Z)
+} |= exists Res prod(s(zero), s(zero), Res)

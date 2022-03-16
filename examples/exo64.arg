@@ -1,0 +1,4 @@
+{
+  forall x P(x) => R(f(x))
+  forall x R(x) => P(f(x))
+} |= forall x P(x) => P(f(f(x)))

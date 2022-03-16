@@ -1,0 +1,4 @@
+{
+        forall x P(x) => Q(x)
+        forall x P(x)
+} |= forall x Q(x)

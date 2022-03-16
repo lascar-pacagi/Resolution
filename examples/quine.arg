@@ -1,0 +1,4 @@
+{
+        (forall x F(x) . G(x) => H(x)) => exists x F(x) . ~G(x)
+        (forall x F(x) => G(x)) + (forall x F(x) => H(x))
+} |= (forall x F(x) . H(x) => G(x)) => exists x F(x) . G(x) . ~H(x)

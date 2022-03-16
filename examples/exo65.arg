@@ -1,0 +1,6 @@
+{
+  forall x exists y E(f(x, y), e)
+  forall x forall y I(x, y) . I(y, x) => E(x, y)
+  forall x I(e, x)
+  forall x forall y I(x, g(y)) => I(x, y)
+} |= forall x I(x, g(e)) => E(x, e)

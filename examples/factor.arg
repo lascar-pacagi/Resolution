@@ -1,0 +1,5 @@
+{
+        forall x forall y p(x) + p(y)
+        forall x forall v ~p(x) + ~p(v)
+}
+|= false

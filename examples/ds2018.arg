@@ -1,0 +1,5 @@
+{
+        forall x E(x) . ~V(x) => exists y S(x, y) . C(y)
+        exists x P(x) . E(x) . forall y S(x, y) => P(y)
+        forall x P(x) => ~V(x)
+} |= exists x P(x) . C(x)

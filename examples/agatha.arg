@@ -1,0 +1,11 @@
+{
+        lives(agatha) . lives(butler) . lives(charles)
+        killed(agatha, agatha) + killed(butler, agatha) + killed(charles, agatha)
+        forall x forall y (killed(x, y) => (hates(x, y) . ~richer(x, y)))
+        forall x (hates(agatha, x) => ~hates(charles, x))
+        hates(agatha, agatha) . hates(agatha, charles)
+        forall x ((lives(x) . ~richer(x, agatha)) => hates(butler, x))
+        forall x (hates(agatha, x) => hates(butler, x))
+        forall x (~hates(x, agatha) + ~hates(x, butler) + ~hates(x, charles))
+}
+|= killed(agatha, agatha) . ~killed(butler, agatha) . ~killed(charles, agatha)

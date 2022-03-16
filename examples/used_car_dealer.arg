@@ -1,0 +1,4 @@
+{
+        forall x UsedCarDealer(x) => ~BuyUsedCarForHisFamily(x)
+        exists x BuyUsedCarForHisFamily(x) . AbsolutelyDishonest(x)
+} |= exists x AbsolutelyDishonest(x) . ~UsedCarDealer(x)

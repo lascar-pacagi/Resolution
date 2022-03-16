@@ -1,0 +1,4 @@
+{
+        exists x P(x) . (forall y D(y) => L(x,y))
+        forall x P(x) => forall y Q(y) => ~L(x,y)
+} |= forall x D(x) => ~Q(x)

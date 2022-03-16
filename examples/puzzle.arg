@@ -1,0 +1,5 @@
+{
+    forall x baby(x) => ~logical(x)
+    forall x manage_crocs(x) => respected(x)
+    forall x ~logical(x) => ~respected(x)
+} |= ~(exists x baby(x) . manage_crocs(x))

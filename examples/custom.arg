@@ -1,0 +1,11 @@
+// E(x) : x entered this country
+// V(x) : x was a VIP
+// S(x, y) : y searched x
+// C(x) : x was a custom official
+// P(x) : x was a drug pusher
+
+{
+        forall x E(x) . ~V(x) => exists y S(x, y) . C(y)
+        exists x P(x) . E(x) . forall y S(x, y) => P(y)
+        forall x P(x) => ~V(x)
+} |= exists x P(x) . C(x)

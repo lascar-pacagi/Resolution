@@ -1,0 +1,26 @@
+{
+  and(0, 0, 0)
+  and(0, 1, 0)
+  and(1, 0, 0)
+  and(1, 1, 1)
+
+  xor(0, 0, 0)
+  xor(0, 1, 1)
+  xor(1, 0, 1)
+  xor(1, 1, 0)
+
+  or(0, 0, 0)
+  or(0, 1, 1)
+  or(1, 0, 1)
+  or(1, 1, 1)
+
+  forall A
+  forall B
+  forall I1
+  forall I2
+  forall Cin
+  forall S
+  forall I3
+  forall Cout
+  xor(A, B, I1) . and(A, B, I2). xor(I1, Cin, S) . and(I1, Cin, I3) . or(I3, I2, Cout) => add(A, B, Cin, S, Cout)
+} |= exists S exists C add(1, 1, 1, S, C)

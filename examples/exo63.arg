@@ -1,0 +1,5 @@
+{
+  P(a)
+  forall x P(x) => Q(t(x))
+  forall x Q(x) => P(t(x))
+} |= P(t(t(t(t(a)))))
